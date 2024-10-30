@@ -1,0 +1,55 @@
+#logistiex-fulfillment-tracking-info {
+  border: 1px solid #cccccc;
+  padding: 20px;
+}
+
+#logistiex-fulfillment-tracking-content {
+  display: inline;
+  align-items: center;
+  width: 100%;
+}
+
+#logistiex-fulfillment-tracking-url {
+  color: blue;
+  text-decoration: none;
+  width: 70%;
+  word-wrap: break-word;
+}
+
+#logistiex-fulfillment-tracking-url-title {
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.logistiex-fulfillment-loader {
+  border: 8px solid #9bc3f7;
+  border-radius: 50%;
+  border-top: 8px solid #004aad;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

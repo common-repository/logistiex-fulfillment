@@ -1,0 +1,106 @@
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px; /* Add some margin for spacing */
+}
+
+.product-card {
+  width: 250px;
+  border: 1px solid #e0e0e0; /* Add a light border for separation */
+  border-radius: 8px;
+  overflow: hidden; /* Hide overflow if content is too long */
+  margin: 20px;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  box-shadow: 0 0 20px rgba(0, 75, 173, 0.5);
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e0e0e0; /* Add a border below the image */
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.submitDetailsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: auto;
+  padding: 30px;
+  position: relative;
+}
+
+.formSubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 75, 173, 0.5);
+  background-color: white;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.description {
+  font-size: 18px;
+  text-align: center;
+  color: #444;
+  line-height: 1.5;
+  margin: 0px 40px;
+}
+
+@media (max-width: 576px) {
+  .product-card {
+    width: calc(100% - 5px);
+    margin: 10px 5px;
+  }
+  .product-container {
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .formSubContainer {
+    width: 100%;
+  }
+  .description {
+    margin: 0px 10px;
+  }
+}
+
+.loader {
+  border: 8px solid #9bc3f7;
+  border-radius: 50%;
+  border-top: 8px solid #004aad;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
